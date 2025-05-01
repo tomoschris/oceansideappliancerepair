@@ -1,96 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
-</html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8"> 
+<style>
+/*
+* multi-line comment
+*/
+p{ line-height: 1.5em;
+font-size:16px;}
+h1, h2, h3, h4{
+    color: orange;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+h1{ font-size: 38px; }
+h2{ font-size: 32px; }
+a{
+	color: blue;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+
+body{
+    font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
+}
+/* you can put your code all in one line like above */
+#page{ margin: 20px; }
+
+/* or on different lines like below */
+#logo{
+	width: 35%;
+	margin-top: 5px;
+	font-family: georgia;
+	display: inline-block;
+}
+/* but try and be as concise as possible */
+#nav{
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+	#nav ul{}
+		#nav ul li{
+			display: inline-block;
+			height: 62px;
+		}
+			#nav ul li a{
+				padding: 20px;
+				background: orange;
+				color: white;
+				text-decoration: none;
+			}
+			#nav ul li a:hover{
+				background-color: #ffb424;
+				box-shadow: 0px 1px 1px #666;
+			}
+			#nav ul li a:active{ background-color: #ff8f00; }
+
+#content{
+	margin: 30px 0;
+	background: white;
+	padding: 20px;
+	clear: both;
+}
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+	#footer p{
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: grey;
+	}
+
+/* multiple styles seperated by a , */
+#content,
+ul li a{ box-shadow: 0px 1px 1px #999; }
+
+#logo img {
+    height: 100px;
+    float: left;
+}
+
+</style>
+<!-- your webpage info goes here -->
+
+    <title>How to Diagnose Common Dryer Problems</title>
+	
+	<meta name="author" content="writer">
+	<meta name="description" content="How to Diagnose Common Dryer Problems">
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="Exploring%20the%20Different%20Types%20of%20Tricycles%20Which%20One%20is%20Best%20for%20You%20_files/style.xml" type="text/css">
+	
+</head>
+<body>
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		<div id="logo">
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+<div class="cl-preview-section">
+<h1 id="how-to-diagnose-common-dryer-problems">How to Diagnose Common Dryer Problems</h1>
+</div>
+<div class="cl-preview-section">
+<p>Dryers can stop working for several reasons, and diagnosing the issue early can save time and money. If you&rsquo;re searching for <strong><a href="https://oceanside-appliancerepair.com/location/appliance-repair-escondido/">Appliance Repair Escondido</a></strong>, you might already be dealing with a dryer that&rsquo;s not heating, not spinning, or making strange noises. Understanding the source of these problems can help you decide whether to fix it yourself or call a professional.</p>
+</div>
+<div class="cl-preview-section">
+<p>Homeowners needing <strong><a href="https://oceanside-appliancerepair.com/dryer-repair-carlsbad/">dryer repair Carlsbad</a></strong> often report the same types of issues. These problems are usually related to airflow, heat generation, or moving parts. Knowing how to identify the cause will make repairs faster and easier.</p>
+</div>
+<div class="cl-preview-section">
+<p><strong>Dryer Won&rsquo;t Start</strong><br /> If your dryer doesn&rsquo;t start, check the power supply first. Make sure it&rsquo;s plugged in and the circuit breaker hasn&rsquo;t tripped. If power isn&rsquo;t the issue, the problem could be a faulty start switch, door switch, or thermal fuse. Use a multimeter to test these parts.</p>
+</div>
+<div class="cl-preview-section">
+<p><strong>Dryer Runs But Produces No Heat</strong><br /> This is a common issue. For electric dryers, the heating element may have burned out. For gas dryers, check the igniter or gas valve coils. Also, inspect the thermal fuse and high-limit thermostat. Any of these parts can prevent the dryer from heating properly.</p>
+</div>
+<div class="cl-preview-section">
+<p><strong>Dryer Makes Loud or Unusual Noises</strong><br /> Thumping, squealing, or grinding sounds usually point to worn-out drum rollers, a damaged belt, or a faulty idler pulley. Remove the dryer panel and spin the drum by hand. If you hear noise or feel resistance, replace the affected parts.</p>
+</div>
+<div class="cl-preview-section">
+<p><strong>Clothes Take Too Long to Dry</strong><br /> If drying time is longer than usual, check the lint filter and vent hose. Blockages can slow airflow and cause overheating. Clean out the filter and vacuum the vent hose. Also check the blower wheel, which moves air through the dryer. If it&rsquo;s loose or clogged, it may need replacing.</p>
+</div>
+<div class="cl-preview-section">
+<p><strong>Dryer Shuts Off Mid-Cycle</strong><br /> This problem can be caused by overheating. The thermal fuse or thermostat may be tripping. Poor airflow is a common cause of overheating. Clean the vents and check internal sensors. If the problem continues, the motor might be failing and may need replacement.</p>
+</div>
+<div class="cl-preview-section">
+<p><strong>Drum Not Spinning</strong><br /> If the motor runs but the drum doesn&rsquo;t spin, the belt may be broken or slipped off. Open the cabinet and check the belt&rsquo;s condition and position. If the belt is intact, inspect the motor and idler pulley for damage.</p>
+</div>
+<div class="cl-preview-section">
+<p><strong>Burning Smell or Excess Heat</strong><br /> Unusual smells may mean lint is trapped near the heating element or motor. Unplug the dryer and clean inside the cabinet. If the smell continues, stop using the machine and call a technician to inspect it safely.</p>
+</div>
+<div class="cl-preview-section">
+<p>Diagnosing a dryer problem starts with a careful look at the symptoms. Some fixes are simple, but others need a trained technician. If you&rsquo;re unsure or want to avoid mistakes, reach out to local experts offering <strong>Appliance Repair Escondido</strong> or <strong>dryer repair Carlsbad</strong>. A correct diagnosis leads to a quicker, safer repair.</p>
+</div>
+		<div id="footer">
+			<p>
+				Webpage made by <a href="#" target="_blank">writer</a>
+			</p> 
+		</div>
+	</div>
